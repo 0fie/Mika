@@ -1,11 +1,12 @@
-{ ... }: {
+{ pkgs, ... }:
+
+{
   plugins.treesitter = {
     enable = true;
     indent = true;
     folding = true;
     nixvimInjections = true;
-    grammarPackages = [ ];
-    ignoreInstall = [ "all" ];
+    grammarPackages = with pkgs; [ vimPlugins.nvim-treesitter-parsers.nix ];
   };
   filetype = { extension = { liq = "liquidsoap"; }; };
   extraConfigLua = ''

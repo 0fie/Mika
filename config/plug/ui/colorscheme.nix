@@ -1,6 +1,6 @@
 {
   colorschemes.catppuccin = {
-    enable = false;
+    enable = true;
     background = {
       light = "frappe";
       dark = "mocha";

@@ -3,7 +3,13 @@
     lsp-format = { enable = true; };
     lsp = {
       enable = true;
-      servers = { nil_ls = { enable = true; }; };
+      servers = {
+        html.enable = true;
+        tsserver.enable = true;
+        nil_ls = { enable = true; };
+        marksman.enable = true;
+        gopls.enable = true;
+      };
       keymaps = {
         silent = true;
         lspBuf = {

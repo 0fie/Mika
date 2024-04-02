@@ -4,7 +4,6 @@
     ./sets.nix
 
     ./plug/completion/cmp.nix
-    ./plug/completion/copilot-cmp.nix
     ./plug/completion/lspkind.nix
 
     ./plug/git/gitsigns.nix
@@ -36,7 +35,6 @@
     ./plug/ui/colorscheme.nix
 
     ./plug/utils/dap.nix
-    ./plug/utils/copilot.nix
     ./plug/utils/flash.nix
     ./plug/utils/hardtime.nix
     #./plug/utils/harpoon.nix

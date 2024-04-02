@@ -4,7 +4,7 @@
     indent = true;
     folding = true;
     nixvimInjections = true;
-    grammarPackages = [ "nix" ];
+    grammarPackages = [ ];
     ignoreInstall = [ "all" ];
   };
   filetype = { extension = { liq = "liquidsoap"; }; };

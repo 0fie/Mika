@@ -4,7 +4,7 @@
 
 # Nixvim config
 
-My neovim config using [Nixvim](https://github.com/nix-community/nixvim) .
+My Neovim config using [Nixvim](https://github.com/nix-community/nixvim) .
 
 <img src="assets/1.png" alt="nvim">
 <img src="assets/2.png" alt="nvim">
@@ -17,12 +17,11 @@ If you add a new configuration file, remember to add it to the
 
 ### Current plugins
 
-- **[colorscheme/](../config/plug/colorscheme):** Theme configuration
 - **[completion/](../config/plug/completion)**
 
   - **[nvim-cmp](../config/plug/completion/cmp.nix):** Completion plugin for nvim + emoji support
   - **[copilot-cmp](../config/plug/completion/copilot-cmp.nix):** Completion support for GitHub copilot
-  - **[lspkind](../config/plug/completion/copilot-cmp.nix):** vscode-like pictograms for neovim lsp completion items
+  - **[lspkind](../config/plug/completion/lspkind.nix):** vscode-like pictograms for neovim lsp completion items
 
 - **[git/](../config/plug/git)**
   - **[gitsigns](../config/plug/git/gitsigns.nix):** Git integration for buffers
@@ -54,9 +53,9 @@ If you add a new configuration file, remember to add it to the
   - **[bufferline](../config/plug/ui/bufferline.nix):** VSCode like line for buffers
   - **[noice](../config/plug/ui/noice.nix):** Better nvim UI
   - **[nvim-notify](../config/plug/ui/nvim-notify.nix):** Notification manager
-  - **[telescope](../config/plug/ui/telescope.nix):** Best plugin ever ?
+  - **[telescope](../config/plug/ui/telescope.nix):** Best plugin ever?
+  - **[catppuccin](../config/plug/ui/colorscheme.nix):** Based colorscheme
 - **[utils/](../config/plug/utils)**
-  - **[CopilotChat](../config/plug/ui/copilot.nix):** Chat with copilot in nvim
   - **[dap](../config/plug/ui/dap.nix):** Debug in nvim
   - **[flash](../config/plug/ui/flash.nix):** Navigate in file with a few keystrokes
   - **[grapple](../config/plug/ui/grapple.nix):** Quickly switch between buffers (Harpoon replacement)
@@ -77,7 +76,7 @@ To test your configuration simply run the following command
 nix run .
 ```
 
-If you have nix intalled, you can directly run my config from anyhwere
+If you have nix installed, you can directly run my config from anywhere
 
 You can try running mine with:
 
@@ -142,10 +141,9 @@ configuration (`home.packges = with pkgs; [ neovim ]`), but you replace
 
 ### Bonus lazy method
 
-You can just straight up alias something like `nix run
-'github:0fie/Mika'` to `nvim`.
+You can just straight up alias something like `nix run "github:0fie/Mika"` to `nvim`.
 
 ## Credits
 
-- This is a fork of [elythh/nixvim](https://github.com/elythh/nixvim)
+- This is a fork of [elythh/nixvim](https://github.com/elythh/nixvim). Most of the files were directly copied from there.
 - [yavko](https://github.com/yavko) for the logo

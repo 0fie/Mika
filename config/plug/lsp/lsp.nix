@@ -4,11 +4,8 @@
     lsp = {
       enable = true;
       servers = {
-        html.enable = true;
-        tsserver.enable = true;
-        nil_ls = { enable = true; };
+        nil_ls.enable = true;
         marksman.enable = true;
-        gopls.enable = true;
       };
       keymaps = {
         silent = true;

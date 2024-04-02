@@ -6,10 +6,6 @@
     nixvimInjections = true;
     grammarPackages = with pkgs.vimPlugins.nvim-treesitter-parsers; [
       nix
-      go
-      html
-      javascript
-      typescript
       markdown
       markdown_inline
     ];

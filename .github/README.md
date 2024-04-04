@@ -8,6 +8,7 @@ Mika (not to be confused with [Maika](https://github.com/0fie/Maika)) is my Neov
 
 <img src="assets/1.png" alt="nvim">
 <img src="assets/2.png" alt="nvim">
+<img src="assets/3.png" alt="nvim">
 
 ## Configuring
 

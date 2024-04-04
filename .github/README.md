@@ -3,8 +3,7 @@
 </div>
 
 # Nixvim config
-
-My Neovim config using [Nixvim](https://github.com/nix-community/nixvim) .
+Mika (not to be confused with [Maika](https://github.com/Maika)) is my Neovim config using [Nixvim](https://github.com/nix-community/nixvim).
 
 <img src="assets/1.png" alt="nvim">
 <img src="assets/2.png" alt="nvim">

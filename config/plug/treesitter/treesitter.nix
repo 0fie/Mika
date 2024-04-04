@@ -21,6 +21,7 @@ in {
       nix
       markdown
       markdown_inline
+      c_sharp
     ];
   };
   extraFiles = {

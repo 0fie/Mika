@@ -3,6 +3,7 @@
 </div>
 
 # Nixvim config
+
 Mika (not to be confused with [Maika](https://github.com/0fie/Maika)) is my Neovim config using [Nixvim](https://github.com/nix-community/nixvim).
 
 <img src="assets/1.png" alt="nvim">
@@ -52,6 +53,7 @@ If you add a new configuration file, remember to add it to the
   - **[noice](../config/plug/ui/noice.nix):** Better nvim UI
   - **[nvim-notify](../config/plug/ui/nvim-notify.nix):** Notification manager
   - **[telescope](../config/plug/ui/telescope.nix):** Best plugin ever?
+  - **[Neoscroll](../config/plug/ui/neoscroll.nix):** Smooth scrolling
   - **[catppuccin](../config/plug/ui/colorscheme.nix):** Based colorscheme
 - **[utils/](../config/plug/utils)**
   - **[dap](../config/plug/ui/dap.nix):** Debug in nvim

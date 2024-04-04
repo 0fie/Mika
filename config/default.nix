@@ -21,7 +21,6 @@
     ./plug/snippets/luasnip.nix
 
     ./plug/statusline/lualine.nix
-    #./plug/statusline/staline.nix
 
     ./plug/treesitter/treesitter-context.nix
     ./plug/treesitter/treesitter-textobjects.nix
@@ -30,6 +29,7 @@
     ./plug/ui/alpha.nix
     ./plug/ui/bufferline.nix
     ./plug/ui/noice.nix
+    ./plug/ui/neoscroll.nix
     ./plug/ui/nvim-notify.nix
     ./plug/ui/telescope.nix
     ./plug/ui/colorscheme.nix

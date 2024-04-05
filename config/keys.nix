@@ -1,69 +1,35 @@
-{
+let
+  bind = mode: key: action: {
+    desc ? "",
+    silent ? false,
+  }: {
+    inherit mode;
+    inherit key;
+    inherit action;
+    options = {
+      inherit desc;
+      inherit silent;
+    };
+  };
+in {
   globals.mapleader = " ";
 
   keymaps = [
     # General maps
-    {
-      mode = "n";
-      key = "<leader>f";
-      action = "+find/file";
-    }
-
-    {
-      mode = "n";
-      key = "<leader>s";
-      action = "+search";
-    }
-
-    {
-      mode = "n";
-      key = "<leader>q";
-      action = "+quit/session";
-    }
-
-    {
-      mode = ["n" "v"];
-      key = "<leader>g";
-      action = "+git";
-    }
-
-    {
-      mode = "n";
-      key = "<leader>u";
-      action = "+ui";
-    }
-
-    {
-      mode = "n";
-      key = "<leader>w";
-      action = "+windows";
-    }
-
-    {
-      mode = "n";
-      key = "<leader><Tab>";
-      action = "+tab";
-    }
-
-    {
-      mode = ["n" "v"];
-      key = "<leader>d";
-      action = "+debug";
-    }
-
-    {
-      mode = ["n" "v"];
-      key = "<leader>c";
-      action = "+code";
-    }
-
-    {
-      mode = ["n" "v"];
-      key = "<leader>t";
-      action = "+test";
-    }
+    (bind "n" "<leader>f" "+find/file" {})
+    (bind "n" "<leader>s" "+search" {})
+    (bind "n" "<leader>q" "+quit/session" {})
+    (bind ["n" "v"] "<leader>g" "+git" {})
+    (bind "n" "<leader>+u" "+ui" {})
+    (bind "n" "<leader>w" "+windows" {})
+    (bind "n" "<leader><Tab>" "+tab" {})
+    (bind ["n" "v"] "<leader>d" "+debug" {})
+    (bind ["n" "v"] "<leader>c" "+code" {})
+    (bind ["n" "v"] "<leader>t" "+test" {})
 
     # Tabs
+    (bind "n" "<leader><tab><tab>" "<cmd>tabnew<cr>" {})
+
     {
       mode = "n";
       key = "<leader><tab><tab>";
@@ -271,14 +237,6 @@
       options = {desc = "Allow search terms to stay in the middle ";};
     }
 
-    # Paste stuff without saving the deleted word into the buffer
-    {
-      mode = "x";
-      key = "<leader>p";
-      action = ''"_dP'';
-      options = {desc = "Deletes to void register and paste over";};
-    }
-
     # Copy stuff to system clipboard with <leader> + y or just y to have it just in vim
     {
       mode = ["n" "v"];
@@ -292,6 +250,22 @@
       key = "<leader>Y";
       action = ''"+Y'';
       options = {desc = "Copy to system clipboard";};
+    }
+
+    # Paste from system clipboard.
+    {
+      mode = ["n" "v"];
+      key = "<leader>p";
+      action = ''"+P'';
+      options = {desc = "Deletes to void register and paste over";};
+    }
+
+    # Turn off highlight after searching
+    {
+      mode = ["n"];
+      key = "<leader>nh";
+      action = ''nohlsearch'';
+      options.desc = "Turns off search highlight";
     }
 
     # Delete to void register

@@ -34,6 +34,7 @@
     ./plug/ui/telescope.nix
     ./plug/ui/colorscheme.nix
 
+    ./plug/utils/comment.nix
     ./plug/utils/dap.nix
     ./plug/utils/flash.nix
     ./plug/utils/hardtime.nix

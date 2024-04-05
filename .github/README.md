@@ -57,6 +57,7 @@ If you add a new configuration file, remember to add it to the
   - **[Neoscroll](../config/plug/ui/neoscroll.nix):** Smooth scrolling
   - **[catppuccin](../config/plug/ui/colorscheme.nix):** Based colorscheme
 - **[utils/](../config/plug/utils)**
+  - **[comment](../config/plug/utils/comment.nix):** Commenting
   - **[dap](../config/plug/ui/dap.nix):** Debug in nvim
   - **[flash](../config/plug/ui/flash.nix):** Navigate in file with a few keystrokes
   - **[grapple](../config/plug/ui/grapple.nix):** Quickly switch between buffers (Harpoon replacement)

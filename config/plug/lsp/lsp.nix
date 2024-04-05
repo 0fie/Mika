@@ -6,7 +6,7 @@
       servers = {
         nil_ls.enable = true;
         marksman.enable = true;
-        csharp-ls.enable = true;
+        #        csharp-ls.enable = true;
       };
       keymaps = {
         silent = true;

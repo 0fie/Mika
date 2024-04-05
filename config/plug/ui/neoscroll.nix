@@ -1,6 +1,6 @@
 {pkgs, ...}: {
-  extraPlugins = with pkgs.vimPlugins; [
-    neoscroll-nvim
+  extraPlugins = [
+    pkgs.vimPlugins.neoscroll-nvim
   ];
 
   extraConfigLua = ''

@@ -2,19 +2,11 @@
   plugins.telescope = {
     enable = true;
     extensions = {
-      file_browser = {
-        enable = true;
-      };
-      fzf-native = {
-        enable = true;
-      };
+      file_browser.enable = true;
+      fzf-native.enable = true;
     };
     defaults = {
-      layout_config = {
-        horizontal = {
-          prompt_position = "top";
-        };
-      };
+      layout_config.horizontal.prompt_position = "top";
       sorting_strategy = "ascending";
     };
     keymaps = {
@@ -107,7 +99,8 @@
         desc = "Jump to Mark";
       };
       "<leader>so" = {
-        action = "vim_options, {}";
+        action = ''
+          vim_options, {}'';
         desc = "Options";
       };
       "<leader>sR" = {
@@ -125,25 +118,19 @@
       mode = "n";
       key = "<leader>sd";
       action = "<cmd>Telescope diagnostics bufnr=0<cr>";
-      options = {
-        desc = "Document diagnostics";
-      };
+      options.desc = "Document diagnostics";
     }
     {
       mode = "n";
       key = "<leader>fe";
       action = "<cmd>Telescope file_browser<cr>";
-      options = {
-        desc = "File browser";
-      };
+      options.desc = "File browser";
     }
     {
       mode = "n";
       key = "<leader>fE";
       action = "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>";
-      options = {
-        desc = "File browser";
-      };
+      options.desc = "File browser";
     }
   ];
   extraConfigLua = ''

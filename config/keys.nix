@@ -28,38 +28,20 @@ in {
     (bind ["n" "v"] "<leader>t" "+test" {})
 
     # Tabs
-    (bind "n" "<leader><tab><tab>" "<cmd>tabnew<cr>" {})
-
-    {
-      mode = "n";
-      key = "<leader><tab><tab>";
-      action = "<cmd>tabnew<cr>";
-      options = {
-        silent = true;
-        desc = "New Tab";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<leader><tab>d";
-      action = "<cmd>tabclose<cr>";
-      options = {
-        silent = true;
-        desc = "Close tab";
-      };
-    }
+    (bind "n" "<leader><tab><tab>" "<cmd>tabnew<cr>" {
+      desc = "New Tab";
+      silent = true;
+    })
+    (bind "n" "<leader><tab>d" "<cmd>tabclose<cr>" {
+      silent = true;
+      desc = "Close Tab";
+    })
 
     # Windows
-    {
-      mode = "n";
-      key = "<leader>ww";
-      action = "<C-W>p";
-      options = {
-        silent = true;
-        desc = "Other window";
-      };
-    }
+    (bind "n" "<leader>ww" "<C-W>p" {
+      silent = true;
+      desc = "Other window";
+    })
 
     {
       mode = "n";

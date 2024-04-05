@@ -6,6 +6,7 @@
       servers = {
         nil_ls.enable = true;
         marksman.enable = true;
+        ltex.enable = true;
         pyright.enable = true;
       };
       keymaps = {

@@ -6,7 +6,7 @@
       servers = {
         nil_ls.enable = true;
         marksman.enable = true;
-        #        csharp-ls.enable = true;
+        pyright.enable = true;
       };
       keymaps = {
         silent = true;

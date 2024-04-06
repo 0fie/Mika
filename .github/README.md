@@ -2,8 +2,8 @@
 
 # Nixvim config
 
-Mika (not to be confused with [Maika](https://github.com/0fie/Maika)) is my Neovim config using
-[Nixvim](https://github.com/nix-community/nixvim).
+Mika (not to be confused with [Maika][Maika]) is my Neovim config using [Nixvim][Nixvim]. It includes AI integration, _offline_ spell &
+grammar checking, code completion, and all the usual stuff like debugging etc.
 
 <p align="center"><img src="assets/1.png" alt="nvim"></p>
 
@@ -164,3 +164,8 @@ You can just straight up alias something like `nix run "github:0fie/Mika"` to `n
 
 - This is a fork of [elythh/nixvim](https://github.com/elythh/nixvim). Most of the files were directly copied from there.
 - [yavko](https://github.com/yavko) for the logo
+
+<!-- Links
+[Maika]: https://github.com/0fie/Maika
+[Nixvim]: https://github.com/nix-community/nixvim
+-->

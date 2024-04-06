@@ -31,9 +31,6 @@ in {
   extraConfigLua = ''
     local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 
-    parser_config.liquidsoap = {
-      filetype = "liquidsoap",
-    }
     parser_config.nu = {
       filetype = "nu",
     }

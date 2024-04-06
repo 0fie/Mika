@@ -72,18 +72,18 @@ If you add a new configuration file, remember to add it to the
 
 - **[Extra Utilities/](../config/plug/utils)**
   - **[comment](../config/plug/utils/comment.nix):** Commenting.
-  - **[dap](../config/plug/ui/dap.nix):** Debug in Neovim.
-  - **[flash](../config/plug/ui/flash.nix):** Navigate in file with a few keystrokes.
-  - **[grapple](../config/plug/ui/grapple.nix):** Quickly switch between buffers (Harpoon replacement).
-  - **[hardtime](../config/plug/ui/hardtime.nix):** Learn Vim motions, the hard way.
-  - **[harpoon](../config/plug/ui/harpoon.nix):** Quickly switch between buffers.
-  - **[illuminate](../config/plug/ui/illuminate.nix):** Highlight word under the cursor.
-  - **[nvim-autopairs](../config/plug/ui/nvim-autopairs.nix):** Autopairs plugin that supports multiple characters.
-  - **[oil](../config/plug/ui/oil.nix):** Navigate in your working folder with a buffer.
-  - **[search.nvim](../config/plug/ui/search.nix):** Adds useful tabs to Telescope.
-  - **[ufo](../config/plug/ui/ufo.nix):** Folding plugin.
-  - **[undotree](../config/plug/ui/undotree.nix):** Undo history visualizer.
-  - **[whichkey](../config/plug/ui/whichkey.nix):** Popup to display keybindings.
+  - **[dap](../config/plug/utils/dap.nix):** Debug in Neovim.
+  - **[flash](../config/plug/utils/flash.nix):** Navigate in file with a few keystrokes.
+  - **[harpoon](../config/plug/utils/harpoon.nix):** Getting you where you want with the fewest keystrokes.
+  - **[hardtime](../config/plug/utils/hardtime.nix):** Learn Vim motions, the hard way.
+  - **[harpoon](../config/plug/utils/harpoon.nix):** Quickly switch between buffers.
+  - **[illuminate](../config/plug/utils/illuminate.nix):** Highlight word under the cursor.
+  - **[nvim-autopairs](../config/plug/utils/nvim-autopairs.nix):** Autopairs plugin that supports multiple characters.
+  - **[oil](../config/plug/utils/oil.nix):** Navigate in your working folder with a buffer.
+  - **[search.nvim](../config/plug/utils/search.nix):** Adds useful tabs to Telescope.
+  - **[ufo](../config/plug/utils/ufo.nix):** Folding plugin.
+  - **[undotree](../config/plug/utils/undotree.nix):** Undo history visualizer.
+  - **[whichkey](../config/plug/utils/whichkey.nix):** Popup to display keybindings.
 
 ## Testing your new configuration
 

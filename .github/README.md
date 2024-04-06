@@ -12,7 +12,7 @@ Mika (not to be confused with [Maika](https://github.com/0fie/Maika)) is my Neov
   <p align="center">Telescope<img src="assets/2.png" alt="nvim"></p>
   <p align="center">Snippets<img src="assets/3.png" alt="nvim"></p>
   <p align="center">Offline spell & grammar checking<img src="assets/4.png" alt="nvim"></p>
-  <p align="center">lsp* plugings for pictograms, emoji etc.<img src="assets/5.png" alt="nvim"></p>
+  <p align="center">LSP* plugins for pictograms, emoji etc.<img src="assets/5.png" alt="nvim"></p>
 </details>
 
 ## Configuring
@@ -25,65 +25,65 @@ If you add a new configuration file, remember to add it to the
 
 - **[AI/](../config/plug/ai)**
 
-  - **[wtf](../config/plug/ai/wtf.nix):** AI powered diagnostic debugging
-  - **[backseat](../config/plug/ai/backseat.nix):** uses GPT to highlight and explain code readability issues.
+  - **[wtf](../config/plug/ai/wtf.nix):** AI powered diagnostic debugging.
+  - **[backseat](../config/plug/ai/backseat.nix):** Uses GPT to highlight and explain code readability issues.
 
-- **[completion/](../config/plug/completion)**
+- **[Completion/](../config/plug/completion)**
 
-  - **[nvim-cmp](../config/plug/completion/cmp.nix):** Completion plugin for nvim + emoji support
-  - **[lspkind](../config/plug/completion/lspkind.nix):** vscode-like pictograms for neovim lsp completion items
+  - **[nvim-cmp](../config/plug/completion/cmp.nix):** Completion plugin.
+  - **[lspkind](../config/plug/completion/lspkind.nix):** VSCode-like pictograms for Neovim LSP completion items.
 
-- **[git/](../config/plug/git)**
+- **[Git/](../config/plug/git)**
 
-  - **[gitsigns](../config/plug/git/gitsigns.nix):** Git integration for buffers
-  - **[lazygit](../config/plug/git/lazygit.nix):** The **best** git TUI, as a neovim plugin
-  - **[worktree](../config/plug/git/worktree.nix):** Make using git worktrees easier
+  - **[gitsigns](../config/plug/git/gitsigns.nix):** Git integration for buffers.
+  - **[lazygit](../config/plug/git/lazygit.nix):** The **best** git TUI, as a Neovim plugin.
+  - **[worktree](../config/plug/git/worktree.nix):** Make using git worktrees easier.
 
-- **[lsp/](../config/plug/lsp)**
+- **[LSP/](../config/plug/lsp)**
 
-  - **[conform](../config/plug/lsp/conform.nix):** Formatter plugin
-  - **[fidget](../config/plug/lsp/fidget.nix):** LSP progress notifications
-  - **[hlchunk](../config/plug/lsp/hlchunk.nix):** Highlight useful things like current chunk or indent lines
-  - **[lsp](../config/plug/lsp/lsp.nix):** LSP configs
-  - **[lspsaga](../config/plug/lsp/lspsaga.nix):** Cool LSP features
-  - **[none-ls](../config/plug/lsp/none-ls.nix):** null-ls replacement. Use nvim as LSP
-  - **[trouble](../config/plug/lsp/trouble.nix):** Pretty interface for working with LSP
+  - **[conform](../config/plug/lsp/conform.nix):** Formatter plugin.
+  - **[fidget](../config/plug/lsp/fidget.nix):** LSP progress notifications.
+  - **[hlchunk](../config/plug/lsp/hlchunk.nix):** Highlight useful things like current chunk or indent lines.
+  - **[lsp](../config/plug/lsp/lsp.nix):** LSP configurations.
+  - **[lspsaga](../config/plug/lsp/lspsaga.nix):** Cool LSP features.
+  - **[none-ls](../config/plug/lsp/none-ls.nix):** null-ls replacement. Use Neovim as LSP.
+  - **[trouble](../config/plug/lsp/trouble.nix):** Pretty interface for working with LSP.
 
-- **[snippet/](../config/plug/snippet)**
+- **[Snippet/](../config/plug/snippet)**
 
-  - **[luasnip](../config/plug/snippet/luasnip.nix):** Snippet engine in Lua
+  - **[luasnip](../config/plug/snippet/luasnip.nix):** Snippet engine in Lua.
 
-- **[treesitter/](../config/plug/treesitter)**
+- **[Treesitter/](../config/plug/treesitter)**
 
-  - **[treesitter-context](../config/plug/treesitter/treesitter-context.nix):** Show code context
-  - **[treesitter-textobject](../config/plug/treesitter/treesitter-textobject.nix):** Allow cool text manupulation thanks to TS
-  - **[treesitter](../config/plug/treesitter/treesitter.nix):** Parser generator tool to build a syntax tree of the current buffer
+  - **[treesitter-context](../config/plug/treesitter/treesitter-context.nix):** Shows code context.
+  - **[treesitter-textobject](../config/plug/treesitter/treesitter-textobject.nix):** Allow cool text manipulation thanks to TS.
+  - **[treesitter](../config/plug/treesitter/treesitter.nix):** Parser generator tool to build a syntax tree of the current buffer.
 
-- **[ui/](../config/plug/ui)**
+- **[UI/](../config/plug/ui)**
 
-  - **[alpha](../config/plug/ui/alpha.nix):** Dashboard
-  - **[bufferline](../config/plug/ui/bufferline.nix):** VSCode like line for buffers
-  - **[catppuccin](../config/plug/ui/colorscheme.nix):** Based colorscheme
-  - **[lualine](../config/plug/ui/lualine.nix):** Status line for neovim
-  - **[neoscroll](../config/plug/ui/neoscroll.nix):** Smooth scrolling
-  - **[noice](../config/plug/ui/noice.nix):** Better nvim UI
-  - **[nvim-notify](../config/plug/ui/nvim-notify.nix):** Notification manager
-  - **[telescope](../config/plug/ui/telescope.nix):** Best plugin ever?
+  - **[alpha](../config/plug/ui/alpha.nix):** Dashboard.
+  - **[bufferline](../config/plug/ui/bufferline.nix):** VSCode-like line for buffers.
+  - **[catppuccin](../config/plug/ui/colorscheme.nix):** Based color scheme.
+  - **[lualine](../config/plug/ui/lualine.nix):** Status line.
+  - **[neoscroll](../config/plug/ui/neoscroll.nix):** Smooth scrolling.
+  - **[noice](../config/plug/ui/noice.nix):** Better Neovim UI.
+  - **[nvim-notify](../config/plug/ui/nvim-notify.nix):** Notification manager.
+  - **[telescope](../config/plug/ui/telescope.nix):** Find, filter, preview and pick files.
 
-- **[utils/](../config/plug/utils)**
-  - **[comment](../config/plug/utils/comment.nix):** Commenting
-  - **[dap](../config/plug/ui/dap.nix):** Debug in nvim
-  - **[flash](../config/plug/ui/flash.nix):** Navigate in file with a few keystrokes
-  - **[grapple](../config/plug/ui/grapple.nix):** Quickly switch between buffers (Harpoon replacement)
-  - **[hardtime](../config/plug/ui/hardtime.nix):** Learn vim motions, the hard way
-  - **[harpoon](../config/plug/ui/harpoon.nix):** Quickly switch between buffers
-  - **[illuminate](../config/plug/ui/illuminate.nix):** Highlight word under the cursor
-  - **[nvim-autopairs](../config/plug/ui/nvim-autopairs.nix):** Autopairs in nvim
-  - **[oil](../config/plug/ui/oil.nix):** Navigate in your working folder with a buffer
-  - **[search.nvim](../config/plug/ui/search.nix):** Adds useful tabs to Telescope
-  - **[ufo](../config/plug/ui/ufo.nix):** Folding plugin
-  - **[undotree](../config/plug/ui/undotree.nix):** Undo history visualizer
-  - **[whichkey](../config/plug/ui/whichkey.nix):** Popup to display keybindings
+- **[Extra Utilities/](../config/plug/utils)**
+  - **[comment](../config/plug/utils/comment.nix):** Commenting.
+  - **[dap](../config/plug/ui/dap.nix):** Debug in Neovim.
+  - **[flash](../config/plug/ui/flash.nix):** Navigate in file with a few keystrokes.
+  - **[grapple](../config/plug/ui/grapple.nix):** Quickly switch between buffers (Harpoon replacement).
+  - **[hardtime](../config/plug/ui/hardtime.nix):** Learn Vim motions, the hard way.
+  - **[harpoon](../config/plug/ui/harpoon.nix):** Quickly switch between buffers.
+  - **[illuminate](../config/plug/ui/illuminate.nix):** Highlight word under the cursor.
+  - **[nvim-autopairs](../config/plug/ui/nvim-autopairs.nix):** Autopairs plugin that supports multiple characters.
+  - **[oil](../config/plug/ui/oil.nix):** Navigate in your working folder with a buffer.
+  - **[search.nvim](../config/plug/ui/search.nix):** Adds useful tabs to Telescope.
+  - **[ufo](../config/plug/ui/ufo.nix):** Folding plugin.
+  - **[undotree](../config/plug/ui/undotree.nix):** Undo history visualizer.
+  - **[whichkey](../config/plug/ui/whichkey.nix):** Popup to display keybindings.
 
 ## Testing your new configuration
 

@@ -5,6 +5,7 @@
 
     ./plug/completion/cmp.nix
     ./plug/completion/lspkind.nix
+    ./plug/completion/luasnip.nix
 
     ./plug/git/gitsigns.nix
     ./plug/git/lazygit.nix
@@ -17,8 +18,6 @@
     ./plug/lsp/lspsaga.nix
     ./plug/lsp/none-ls.nix
     ./plug/lsp/trouble.nix
-
-    ./plug/snippets/luasnip.nix
 
     ./plug/treesitter/treesitter-context.nix
     ./plug/treesitter/treesitter-textobjects.nix

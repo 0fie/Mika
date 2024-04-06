@@ -32,6 +32,7 @@ If you add a new configuration file, remember to add it to the
 
   - **[nvim-cmp](../config/plug/completion/cmp.nix):** Completion plugin.
   - **[lspkind](../config/plug/completion/lspkind.nix):** VSCode-like pictograms for Neovim LSP completion items.
+  - \*\*[luasnip](../config/plug/completion/luasnip.nix)
 
 - **[Git/](../config/plug/git)**
 
@@ -48,10 +49,6 @@ If you add a new configuration file, remember to add it to the
   - **[lspsaga](../config/plug/lsp/lspsaga.nix):** Cool LSP features.
   - **[none-ls](../config/plug/lsp/none-ls.nix):** null-ls replacement. Use Neovim as LSP.
   - **[trouble](../config/plug/lsp/trouble.nix):** Pretty interface for working with LSP.
-
-- **[Snippet/](../config/plug/snippet)**
-
-  - **[luasnip](../config/plug/snippet/luasnip.nix):** Snippet engine in Lua.
 
 - **[Treesitter/](../config/plug/treesitter)**
 

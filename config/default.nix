@@ -20,19 +20,22 @@
 
     ./plug/snippets/luasnip.nix
 
-    ./plug/statusline/lualine.nix
-
     ./plug/treesitter/treesitter-context.nix
     ./plug/treesitter/treesitter-textobjects.nix
     ./plug/treesitter/treesitter.nix
 
+    ./plug/ai/wtf.nix
+    ./plug/ai/backseat.nix
+
     ./plug/ui/alpha.nix
     ./plug/ui/bufferline.nix
+    ./plug/ui/lualine.nix
     ./plug/ui/noice.nix
     ./plug/ui/neoscroll.nix
     ./plug/ui/nvim-notify.nix
     ./plug/ui/telescope.nix
     ./plug/ui/colorscheme.nix
+    ./plug/ui/search.nix
 
     ./plug/utils/comment.nix
     ./plug/utils/dap.nix

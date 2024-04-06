@@ -19,7 +19,7 @@ grammar checking, code completion, and all the usual stuff like debugging etc.
 
 To start configuring, just add or modify the nix files in `./config`.
 If you add a new configuration file, remember to add it to the
-[`config/default.nix`](../config/default.nix) file
+[config/default.nix](../config/default.nix) file
 
 ### Current plugins
 

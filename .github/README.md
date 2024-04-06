@@ -165,6 +165,9 @@ You can just straight up alias something like `nix run "github:0fie/Mika"` to `n
 - This is a fork of [elythh/nixvim](https://github.com/elythh/nixvim). Most of the files were directly copied from there.
 - [yavko](https://github.com/yavko) for the logo
 
+<p align="center"><a href="https://github.com/0fie/Mika?tab=readme-ov-file#readme">back to top</a></p>
+
 <!-- Links -->
+
 [Maika]: https://github.com/0fie/Maika
 [Nixvim]: https://github.com/nix-community/nixvim

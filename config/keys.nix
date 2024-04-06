@@ -1,3 +1,5 @@
+# This is work in progress. The 'bind' function below should be used to create keymaps.
+# We want our keymaps to be one-liners instead of 8.
 let
   bind = mode: key: action: {
     desc ? "",

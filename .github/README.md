@@ -32,7 +32,7 @@ If you add a new configuration file, remember to add it to the
 
   - **[nvim-cmp](../config/plug/completion/cmp.nix):** Completion plugin.
   - **[lspkind](../config/plug/completion/lspkind.nix):** VSCode-like pictograms for Neovim LSP completion items.
-  - \*\*[luasnip](../config/plug/completion/luasnip.nix)
+  - **[luasnip](../config/plug/completion/luasnip.nix):** Snippets
 
 - **[Git/](../config/plug/git)**
 

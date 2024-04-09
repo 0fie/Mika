@@ -1,5 +1,3 @@
-# This is work in progress. The 'bind' function below should be used to create keymaps.
-# We want our keymaps to be one-liners instead of 8.
 let
   bind = mode: key: action: {
     desc ? "",
@@ -44,56 +42,26 @@ in {
       silent = true;
       desc = "Other window";
     })
-
-    {
-      mode = "n";
-      key = "<leader>wd";
-      action = "<C-W>c";
-      options = {
-        silent = true;
-        desc = "Delete window";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<leader>w-";
-      action = "<C-W>s";
-      options = {
-        silent = true;
-        desc = "Split window below";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<leader>w|";
-      action = "<C-W>v";
-      options = {
-        silent = true;
-        desc = "Split window right";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<C-h>";
-      action = "<C-W>h";
-      options = {
-        silent = true;
-        desc = "Move to window left";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<C-l>";
-      action = "<C-W>l";
-      options = {
-        silent = true;
-        desc = "Move to window right";
-      };
-    }
+    (bind "n" "<leader>wd" "<C-W>c" {
+      silent = true;
+      desc = "Delete window";
+    })
+    (bind "n" "<leader>w-" "<C-W>s" {
+      silent = true;
+      desc = "Split window below";
+    })
+    (bind "n" "<leader>w|" "<C-W>v" {
+      silent = true;
+      desc = "Split window right";
+    })
+    (bind "n" "<C-h>" "<C-W>h" {
+      silent = true;
+      desc = "Move to window left";
+    })
+    (bind "n" "<C-l>" "<C-W>l" {
+      silent = true;
+      desc = "Move to window right";
+    })
 
     {
       mode = "n";

@@ -23,6 +23,7 @@ in {
       markdown_inline
       python
       gleam
+      tree-sitter-grammars.tree-sitter-gleam
     ];
   };
   extraFiles = {

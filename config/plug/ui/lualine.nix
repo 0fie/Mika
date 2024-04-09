@@ -18,7 +18,8 @@
           bg = "nil";
         };
         z = {
-          bg = "nil";
+          bg = "#b4befe";
+          fg = "#1c1d21";
         };
         y = {
           bg = "nil";
@@ -34,13 +35,13 @@
     };
     sectionSeparators = {
       left = "";
-      right = "";
+      right = "";
     };
     sections = {
       lualine_a = [
         {
           name = "mode";
-          icon = "";
+          icon = "";
           separator = {
             left = "";
             right = "";
@@ -107,17 +108,13 @@
           icon = "";
           color = {
             fg = "#1c1d21";
-            bg = "#f2cdcd";
+            bg = "#7d83ac";
           };
         }
       ];
       lualine_z = [
         {
           name = "location";
-          color = {
-            fg = "#1c1d21";
-            bg = "#f2cdcd";
-          };
         }
       ];
     };

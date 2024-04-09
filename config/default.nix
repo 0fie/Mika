@@ -40,7 +40,6 @@
     ./plug/utils/dap.nix
     ./plug/utils/flash.nix
     ./plug/utils/hardtime.nix
-    ./plug/utils/harpoon.nix
     ./plug/utils/illuminate.nix
     ./plug/utils/nvim-autopairs.nix
     ./plug/utils/oil.nix

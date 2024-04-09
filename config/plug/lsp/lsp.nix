@@ -8,6 +8,7 @@
         marksman.enable = true;
         ltex.enable = true;
         pyright.enable = true;
+        gleam.enable = true;
       };
       keymaps = {
         silent = true;

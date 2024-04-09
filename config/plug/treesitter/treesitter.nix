@@ -22,6 +22,7 @@ in {
       markdown
       markdown_inline
       python
+      gleam
     ];
   };
   extraFiles = {

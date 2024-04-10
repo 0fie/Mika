@@ -9,7 +9,7 @@
       codeAction = "💡";
     };
     hover = {
-      openCmd = "!kitty -e"; # Choose your browser
+      openCmd = "!kitty -e";
       openLink = "firefox";
     };
     diagnostic = {
@@ -17,9 +17,7 @@
       diagnosticOnlyCurrent = false;
       showCodeAction = true;
     };
-    symbolInWinbar = {
-      enable = true; # Breadcrumbs
-    };
+    symbolInWinbar.enable = true; # Breadcrumbs
     codeAction = {
       extendGitSigns = false;
       showServerName = true;

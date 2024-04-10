@@ -21,26 +21,26 @@
     move = {
       enable = true;
       gotoNextStart = {
-        "]m" = "@function.outer";
-        "]]" = "@class.outer";
-      };
-      gotoNextEnd = {
-        "]M" = "@function.outer";
-        "][" = "@class.outer";
-      };
-      gotoPreviousStart = {
         "[m" = "@function.outer";
         "[[" = "@class.outer";
       };
-      gotoPreviousEnd = {
+      gotoNextEnd = {
         "[M" = "@function.outer";
         "[]" = "@class.outer";
+      };
+      gotoPreviousStart = {
+        "]m" = "@function.outer";
+        "]]" = "@class.outer";
+      };
+      gotoPreviousEnd = {
+        "]M" = "@function.outer";
+        "][" = "@class.outer";
       };
     };
     swap = {
       enable = true;
-      swapNext = { "<leader>a" = "@parameters.inner"; };
-      swapPrevious = { "<leader>A" = "@parameter.outer"; };
+      swapNext = {"<leader>a" = "@parameters.inner";};
+      swapPrevious = {"<leader>A" = "@parameter.outer";};
     };
   };
 }

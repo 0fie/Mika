@@ -1,6 +1,6 @@
 {pkgs, ...}: {
-  extraPlugins = with pkgs.vimPlugins; [
-    lazygit-nvim
+  extraPlugins = [
+    pkgs.vimPlugins.lazygit-nvim
   ];
 
   extraConfigLua = ''

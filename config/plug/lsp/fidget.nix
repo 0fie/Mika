@@ -24,9 +24,7 @@
           function(msg) return msg.lsp_client.name end
         '';
       ignore = []; # List of LSP servers to ignore
-      lsp = {
-        progressRingbufSize = 0; # Configure the nvim's LSP progress ring buffer size
-      };
+      lsp.progressRingbufSize = 0; # Configure the nvim's LSP progress ring buffer size
       display = {
         renderLimit = 16; # How many LSP messages to show at once
         doneTtl = 3; # How long a message should persist after completion
@@ -90,9 +88,7 @@
         stackUpwards = true; # Display notification items from bottom to top
         iconSeparator = " "; # Separator between group name and icon
         groupSeparator = "---"; # Separator between notification groups
-        groupSeparatorHl =
-          # Highlight group used for group separator
-          "Comment";
+        groupSeparatorHl = "Comment"; # Highlight group used for group separator
       };
     };
   };

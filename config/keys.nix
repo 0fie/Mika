@@ -62,140 +62,46 @@ in {
       silent = true;
       desc = "Move to window right";
     })
+    ("n" "<C-k>" "<C-W>k" {
+      silent = true;
+      desc = "Move to window over";
+    })
 
-    {
-      mode = "n";
-      key = "<C-k>";
-      action = "<C-W>k";
-      options = {
-        silent = true;
-        desc = "Move to window over";
-      };
-    }
+    (bind "n" "<C-j>" "<C-W>j" {
+      silent = true;
+      desc = "Move to window bellow";
+    })
 
-    {
-      mode = "n";
-      key = "<C-j>";
-      action = "<C-W>j";
-      options = {
-        silent = true;
-        desc = "Move to window bellow";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<C-s>";
-      action = "<cmd>w<cr><esc>";
-      options = {
-        silent = true;
-        desc = "Save file";
-      };
-    }
+    (bind "n" "<C-s>" "<cmd>w<cr><esc>" {
+      silent = true;
+      desc = "Save file";
+    })
 
     # Quit/Session
-    {
-      mode = "n";
-      key = "<leader>qq";
-      action = "<cmd>quitall<cr><esc>";
-      options = {
-        silent = true;
-        desc = "Quit all";
-      };
-    }
+    (bind "n" "<leader>qq" "<cmd>quitall<cr><esc>" {
+      silent = true;
+      desc = "Quit all";
+    })
 
-    {
-      mode = "v";
-      key = "J";
-      action = ":m '>+1<CR>gv=gv";
-      options = {desc = "Use move command when line is highlighted ";};
-    }
-
-    {
-      mode = "v";
-      key = "K";
-      action = ":m '>-2<CR>gv=gv";
-      options = {desc = "Use move command when line is highlighted ";};
-    }
-
-    {
-      mode = "n";
-      key = "J";
-      action = "mzJ`z";
-      options = {
-        desc = "Allow cursor to stay in the same place after appending to current line ";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<C-d>";
-      action = "<C-d>zz";
-      options = {
-        desc = "Allow C-d and C-u to keep the cursor in the middle";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<C-u>";
-      action = "<C-u>zz";
-      options = {
-        desc = "Allow C-d and C-u to keep the cursor in the middle";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "n";
-      action = "nzzzv";
-      options = {desc = "Allow search terms to stay in the middle ";};
-    }
-
-    {
-      mode = "n";
-      key = "N";
-      action = "Nzzzv";
-      options = {desc = "Allow search terms to stay in the middle ";};
-    }
+    (bind "v" "J" ":m '>+1<CR>gv=gv" {desc = "Use move command when line is highlighted";})
+    (bind "v" "K" ":m '>-2<CR>gv=gv" {desc = "Use move command when line is highlighted";})
+    (bind "n" "J" "mzJ`z" {desc = "Allow cursor to stay in the same place after appending to current line";})
+    (bind "n" "<C-d>" "<C-d>zz" {desc = "Allow C-d and C-u to keep cursor in the middle.";})
+    (bind "n" "<C-u>" "<C-u>zz" {desc = "Allow C-d and C-u to keep cursor in the middle";})
+    (bind "n" "n" "nzzzv" {desc = "Allow search terms to stay in the middle";})
+    (bind "n" "N" "Nzzzv" {desc = "Allow search terms to in the middle";})
 
     # Copy stuff to system clipboard with <leader> + y or just y to have it just in vim
-    {
-      mode = ["n" "v"];
-      key = "<leader>y";
-      action = ''"+y'';
-      options = {desc = "Copy to system clipboard";};
-    }
-
-    {
-      mode = ["n" "v"];
-      key = "<leader>Y";
-      action = ''"+Y'';
-      options = {desc = "Copy to system clipboard";};
-    }
+    (bind ["n" "v"] "<leader>y" ''"+y'' {desc = "Copy to system clipboard";})
+    (bind ["n" "v"] "<leader>Y" ''"+Y'' {desc = "Copy to system clipboard";})
 
     # Paste from system clipboard.
-    {
-      mode = ["n" "v"];
-      key = "<leader>p";
-      action = ''"+P'';
-      options = {desc = "Deletes to void register and paste over";};
-    }
+    (bind ["n" "v"] "<leader>p" ''"+P'' {desc = "Deletes to void register and paste over";})
 
     # Turn off highlight after searching
-    {
-      mode = ["n"];
-      key = "<leader>nh";
-      action = ''nohlsearch'';
-      options.desc = "Turns off search highlight";
-    }
+    (bind "n" "<leader>nh" "nohlsearch" {desc = "Turn off search highlight";})
 
     # Delete to void register
-    {
-      mode = ["n" "v"];
-      key = "<leader>D";
-      action = ''"_d'';
-      options = {desc = "Delete to void register";};
-    }
+    (bind ["n" "v"] "<leader>D" {desc = "Delete to void register";})
   ];
 }

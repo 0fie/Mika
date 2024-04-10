@@ -5,12 +5,12 @@
       enable = true;
     };
     ui = {
-      border = "rounded"; # One of none, single, double, rounded, solid, shadow
-      codeAction = "💡"; # Can be any symbol you want 💡
+      border = "rounded";
+      codeAction = "💡";
     };
     hover = {
-      openCmd = "!floorp"; # Choose your browser
-      openLink = "gx";
+      openCmd = "!kitty -e"; # Choose your browser
+      openLink = "firefox";
     };
     diagnostic = {
       borderFollow = true;
@@ -31,13 +31,11 @@
       };
     };
     lightbulb = {
-      enable = false;
-      sign = false;
+      enable = true;
+      sign = true;
       virtualText = true;
     };
-    implement = {
-      enable = false;
-    };
+    implement.enable = false;
     rename = {
       autoSave = false;
       keys = {
@@ -82,16 +80,6 @@
         silent = true;
       };
     }
-
-    # {
-    #   mode = "n";
-    #   key = "gD";
-    #   action = "<cmd>Lspsaga show_line_diagnostics<CR>";
-    #   options = {
-    #     desc = "Goto Declaration";
-    #     silent = true;
-    #   };
-    # }
 
     {
       mode = "n";
@@ -165,7 +153,7 @@
 
     {
       mode = "n";
-      key = "[d";
+      key = "]d";
       action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
       options = {
         desc = "Next Diagnostic";
@@ -175,7 +163,7 @@
 
     {
       mode = "n";
-      key = "]d";
+      key = "[d";
       action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
       options = {
         desc = "Previous Diagnostic";

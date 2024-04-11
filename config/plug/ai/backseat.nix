@@ -12,11 +12,8 @@
   ];
 
   extraConfigLua = ''
-    -- see https://github.com/james1236/backseat.nvim for configuration options.
-    -- A valid OpenAI API key is required.
     require("backseat").setup({
       openai_model_id = 'gpt-3.5-turbo',
-      language = 'english',
       split_threshold = 100,
       highlight = {
         icon = '', -- ''

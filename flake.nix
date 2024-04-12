@@ -1,65 +1,17 @@
 {
-  description = "0fie's Neovim configuration";
+  description = "0fie's ultra-simple Neovim configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    flake-parts.url = "github:hercules-ci/flake-parts";
+    nixpkgs.url = "nixpkgs/nixpkgs-unstable";
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    pre-commit-hooks = {
-      url = "github:cachix/pre-commit-hooks.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = {
-    nixpkgs,
-    nixvim,
-    flake-parts,
-    pre-commit-hooks,
-    ...
-  } @ inputs:
-    flake-parts.lib.mkFlake {inherit inputs;} {
-      # Those extra systems were slowing down eval and bloating my flake.lock
-      systems = ["x86_64-linux"]; # "aarch64-linux", "aarch64-darwin" "x86_64-darwin"
-
-      perSystem = {
-        system,
-        pkgs,
-        self',
-        lib,
-        ...
-      }: let
-        nixvim' = nixvim.legacyPackages.${system};
-        nvim = nixvim'.makeNixvimWithModule {
-          inherit pkgs;
-          module = ./config;
-        };
-      in {
-        checks = {
-          default = pkgs.nixvimLib.check.mkTestDerivationFromNvim {
-            inherit nvim;
-            name = "A nixvim configuration";
-          };
-          pre-commit-check = pre-commit-hooks.lib.${system}.run {
-            src = ./.;
-            hooks = {
-              statix.enable = true;
-              alejandra.enable = true;
-            };
-          };
-        };
-
-        formatter = pkgs.alejandra;
-
-        packages.default = nvim;
-
-        devShells = {
-          default = with pkgs;
-            mkShell {inherit (self'.checks.pre-commit-check) shellHook;};
-        };
-      };
+  outputs = {nixvim, ...}:{
+    packages.default = nixvim.legacyPackages."x86_64-linux".makeNixvimWithModule {
+      module = ./config;
     };
+  };
 }

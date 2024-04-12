@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  config.options = {
+  config.opts = {
     # Enable relative line numbers
     number = true;
     relativenumber = true;

@@ -119,17 +119,16 @@ You can add my `nixvim` configuration as an input to your `NixOS` configuration 
 With the input added you can reference it directly.
 
 ```nix
-{ inputs, system, ... }:
+{ inputs, ... }:
 {
   # NixOS
-  environment.systemPackages = [ inputs.nixvim.packages.${system}.default ];
+  environment.systemPackages = [ inputs.nixvim.packages.${pkgs.system}.default ];
   # home-manager
-  home.packages = [ inputs.nixvim.packages.${system}.default ];
+  home.packages = [ inputs.nixvim.packages.${pkgs.system}.default ];
 }
 ```
 
-The binary built by `nixvim` is already named as `nvim` so you can call it just
-like you normally would.
+The binary built by `nixvim` is already named as `nvim`, so you can call it just like you normally would.
 
 ### Installing as an overlay
 
@@ -146,7 +145,7 @@ configuration (`home.packges = with pkgs; [ neovim ]`), but you replace
     inherit system;
     overlays = [
       (final: prev: {
-        neovim = inputs.nixvim.packages.${system}.default;
+        neovim = inputs.nixvim.packages.${pkgs.system}.default;
       })
     ];
   }

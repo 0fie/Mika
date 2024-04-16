@@ -36,6 +36,7 @@ in {
       markdown
       markdown_inline
       python
+      rust
     ];
   };
   extraFiles = {

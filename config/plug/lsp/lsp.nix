@@ -9,6 +9,11 @@
         ltex.enable = true;
         pyright.enable = true;
         gleam.enable = true;
+        rust-analyzer = {
+          enable = true;
+          installCargo = false;
+          installRustc = false;
+        };
       };
       keymaps = {
         silent = true;

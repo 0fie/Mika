@@ -29,8 +29,8 @@
       };
     };
     lightbulb = {
-      enable = true;
-      sign = true;
+      enable = false;
+      sign = false;
       virtualText = true;
     };
     implement.enable = false;

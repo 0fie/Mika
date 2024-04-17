@@ -10,6 +10,7 @@
       python = ["black"];
       nix = ["alejandra"];
       markdown = [["prettierd" "prettier"]];
+      rust = ["rustfmt"];
     };
   };
 }

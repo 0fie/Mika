@@ -1,11 +1,11 @@
 {
   colorschemes.catppuccin = {
     enable = true;
-    background = {
-      light = "frappe";
-      dark = "mocha";
-    };
     settings = {
+      background = {
+        light = "frappe";
+        dark = "mocha";
+      };
       flavour = "mocha";
       disableBold = false;
       disableItalic = false;

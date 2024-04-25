@@ -1,3 +1,7 @@
+###### I can't do this anymore.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 <div align="center"><img src="assets/neovim-flake-logo-work.svg" alt="neovim-flake Logo"  width="200"></div>
 
 # Nixvim config
